@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ogeniuspriority.nds.nds">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="26" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" android:required="true" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:required="true"
+        />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="true" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" android:required="true" />
+
+    <supports-screens android:xlargeScreens="true" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:banner="@mipmap/neza_000_we"
+        android:icon="@mipmap/neza_000_we"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                />
+            </provider>
+
+
+        <!--
+        <activity
+            android:name=".NDS_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".NDS_Login"
+            android:label="Neza Digital Service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            <activity
+            android:name=".NDS_Login"
+            android:label="@string/title_activity_nds__login" />
+        -->
+         <!-- optional (needed if default theme has no action bar) -->
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/> <!-- optional (needed if default theme has no action bar) -->
+        <activity
+            android:name=".NDS_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NDS_profile"
+            android:label="@string/title_activity_nds_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NDS_messages"
+            android:label="@string/title_activity_nds_messages"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NDS_messages_respond"
+            android:label="Ubutumwa "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NDS_posts_comments"
+            android:label="Posts&apos; Comments "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Urubuga_Services"
+            android:icon="@mipmap/neza_000_we"
+            android:label="@string/title_activity_urubuga__services"
+            android:largeHeap="true"
+            android:multiprocess="true"
+            android:persistent="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Suggestion_box_suggest"
+            android:configChanges="orientation|screenSize"
+            android:largeHeap="true"
+            android:multiprocess="true"
+            android:persistent="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Forum_post" />
+        <activity android:name=".NDS_registration_activation" />
+        <activity
+            android:name=".NDS_settings"
+            android:label="Settings" />
+        <activity android:name=".NDS_find_This_Account" />
+        <activity
+            android:name=".Report_a_problem"
+            android:label="Report a problem" />
+        <activity
+            android:name=".Notification_settings"
+            android:label="Notification" />
+        <activity
+            android:name=".Photos_and_media"
+            android:label="Photos &amp; media" />
+        <activity
+            android:name=".Profile_edit"
+            android:persistent="true"
+            android:label="Profile " />
+        <activity
+            android:name=".crop.CropImageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- optional (needed if default theme has no action bar) -->
+        <activity android:name=".ViewProfile"
+            android:persistent="true"
+            />
+        <activity android:name=".follow_up_this_query" />
+
+        <activity android:name=".View_NDS_posts_comments"
+            android:noHistory="true" ></activity>
+    </application>
+
+</manifest>

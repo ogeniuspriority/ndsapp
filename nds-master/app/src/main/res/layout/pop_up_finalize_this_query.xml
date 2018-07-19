@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#000000"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </TableRow>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resolved"
+                    android:onClick="getTheCheckedOnDude"
+                    android:textSize="18dp"
+                    android:id="@+id/radioButton4"
+                    android:checked="false" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Issue not resolved but i&apos;m satisfied with explanations"
+                    android:textSize="18dp"
+                    android:onClick="getTheCheckedOnDude"
+                    android:id="@+id/radioButton5"
+                    android:checked="false" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="getTheCheckedOnDude"
+                    android:text="Issue not resolved and not satisted with explanations"
+                    android:textSize="18dp"
+                    android:id="@+id/radioButton6"
+                    android:checked="false" />
+
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="18dp"
+                    android:id="@+id/radioButton7"
+                    android:checked="false" />
+
+
+
+
+        </RadioGroup>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/new_post_feed"
+            android:padding="6dp"
+            android:hint="Other comment here"
+            android:textColorHint="#333333"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_gravity="center_horizontal" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button2"
+            android:background="@drawable/button_forum"
+            android:textColor="#cdcdcd"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</ScrollView>

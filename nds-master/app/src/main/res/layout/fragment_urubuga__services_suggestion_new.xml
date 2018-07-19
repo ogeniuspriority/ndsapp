@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.ogeniuspriority.nds.nds.Urubuga_Services$PlaceholderFragment">
+
+
+    <ListView
+        android:id="@+id/suggested_pgds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/suggest_btn"
+        android:drawingCacheQuality="high"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+
+    <LinearLayout
+        android:id="@+id/suggest_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/Add_sution"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:padding="8dp"
+                android:src="@drawable/ic_add_black_24dp"
+                android:text="Add"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/Add_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Add_sution"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Add_sution"
+                android:layout_toRightOf="@+id/Add_sution"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingStart="20dp"
+                android:text="Add suggestion"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

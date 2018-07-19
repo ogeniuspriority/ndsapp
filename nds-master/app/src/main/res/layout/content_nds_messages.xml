@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="1dp"
+    tools:context="com.ogeniuspriority.nds.nds.NDS_messages"
+    tools:showIn="@layout/activity_nds_messages">
+
+    <ListView
+        android:id="@+id/message_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="true"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="high"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true" />
+
+
+</RelativeLayout>

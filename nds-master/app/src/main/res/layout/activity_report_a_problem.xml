@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ogeniuspriority.nds.nds.Report_a_problem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/pedidos_shape"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+        <EditText
+            android:id="@+id/complaint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|left"
+            android:layout_weight="1"
+            android:hint="Type your complaint here" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+           android:padding="4dp"
+            android:id="@+id/send_complaint"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_menu_send"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Thanks for your contribution,your problem will be studied and resolved to the best of your satisfaction "
+        android:id="@+id/textView3"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

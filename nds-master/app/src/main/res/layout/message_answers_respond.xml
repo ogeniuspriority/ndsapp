@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_card"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/IkibazoMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <TextView
+                android:id="@+id/ton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                android:text="From" />
+
+            <TextView
+                android:id="@+id/bon4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                android:text="officer 3" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp">
+
+            <TextView
+                android:id="@+id/tView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTextView"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="New Text dfihdfd fdkfjidofd fkojdfdfdofdfjodfd fdfojdf dfodjfd fdofjhdfndo9fdf dofjdf dfodjfdf dofhdf dfodfd foidfdhof             fdijfdf dfnidfhdf dfihdf dfidfd " />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            >
+
+
+        <TextView
+            android:id="@+id/iubimsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            android:text="18/05/2016" />
+        <ImageView
+            android:id="@+id/del_me_if"
+            android:layout_width="wrap_content"
+            android:src="@drawable/delete_this_post"
+            android:background="@drawable/button_forum"
+            android:textColor="#cdcdcd"
+            android:layout_height="wrap_content"
+            android:onClick="delete_Q_S_response"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

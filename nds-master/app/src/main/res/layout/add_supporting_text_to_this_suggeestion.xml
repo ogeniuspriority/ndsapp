@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:background="@drawable/pedidos_shape"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/image_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/edixt_label_i"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Image"
+            android:textColor="#000"
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/edixt_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minHeight="400dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/kayi" />
+
+        <EditText
+            android:id="@+id/edixt_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Supporting caption"
+            android:minHeight="100dp" />
+
+        <Button
+            android:id="@+id/send_photo_suggest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Send Image" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/edixt_label_v"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:text="Video"
+             />
+
+        <ImageView
+            android:id="@+id/edixt_image_video"
+            android:layout_width="fill_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/kayi" />
+
+        <EditText
+            android:id="@+id/edixt_label_video"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Supporting caption"
+            android:minHeight="100dp" />
+
+        <Button
+            android:id="@+id/send_suggest_video"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Send Video" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/edixt_label_a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:text="Audio"
+            />
+
+        <LinearLayout
+            android:id="@+id/argio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/edixt_audio"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/play_btn" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:thumb="@drawable/play_this_audio" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edixt_label_audio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Supporting caption"
+            android:minHeight="100dp" />
+
+        <Button
+            android:id="@+id/send_suggest_audio"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Send audio" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

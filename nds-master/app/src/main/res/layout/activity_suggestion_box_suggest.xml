@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context="com.ogeniuspriority.nds.nds.Suggestion_box_suggest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="4dp">
+                <ImageView
+                    android:id="@+id/Avatra"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@mipmap/neza_default_avatar" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Pass your suggestion..."
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <Button
+                    android:id="@+id/SendTxtSuggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:onClick="sendTextSuggestion"
+                    android:text="Send"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    tools:textColor="@color/colorAccent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_line" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearggLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    android:hint="Type or choose institution "
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:id="@+id/view_all"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/close_edit"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/x_close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_line" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Holder_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/institution_avatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_margin="4dp"
+                    android:src="@mipmap/box_0000" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/Name_of_institution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Rwanda Governance Board"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/motto_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Public Institutions"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/closeThis"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/x_close" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_line" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lineaayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <ImageView
+                android:id="@+id/record_audio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="takeAudio"
+                android:src="@drawable/ic_keyboard_voice_black_24dp" />
+
+            <ImageView
+                android:id="@+id/record_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="takeVideo"
+                android:src="@drawable/ic_videocam_black_24dp" />
+
+            <ImageView
+                android:id="@+id/choose_audio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="ChooseAudioFromDevice"
+                android:src="@drawable/ic_audiotrack_black_24dp" />
+
+            <ImageView
+                android:id="@+id/take_pic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="takePicture"
+                android:src="@drawable/ic_camera_black_24dp" />
+
+            <ImageView
+                android:id="@+id/pick_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="ChooseImageFromDevice"
+
+                android:src="@drawable/ic_image_black_24dp" />
+
+            <ImageView
+                android:id="@+id/choose_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="ChooseVideoFromDevice"
+                android:src="@drawable/ic_slideshow_black_24dp"
+                android:tag="video" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_line" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rowData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true"
+
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+
+            <LinearLayout
+                android:id="@+id/textSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:hint="Your message goes here! "
+                    android:padding="20dp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/image_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pedidos_shape_custom"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <com.ogeniuspriority.nds.nds.ScaleImageView
+                    android:id="@+id/edixt_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/kayi" />
+
+                <EditText
+                    android:id="@+id/edixt_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edixt_image"
+                    android:hint="Write your caption here"
+
+                    android:textColor="#ffffff"
+                    android:textColorHint="#cdcd" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pedidos_shape_custom"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <VideoView
+                    android:id="@+id/edixt_image_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:minHeight="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/kayi" />
+
+                <EditText
+                    android:id="@+id/edixt_label_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edixt_image_video"
+                    android:hint="Write your caption here"
+
+                    android:textColor="#ffffff"
+                    android:textColorHint="#cdcdcd" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/audio_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pedidos_shape_custom"
+                android:padding="15dp"
+
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/audio_tag_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal"
+                   >
+
+
+                    <TextView
+                        android:id="@+id/audio_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HAjad.avi"
+                        android:paddingLeft="20dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/time_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="55"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/argio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/audio_tag_linear"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/edixt_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_play_arrow_black_24dp" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/ic_fiber_manual_record_black_24dp"
+                        android:progressTint="@color/white"
+                        android:backgroundTint="@color/colorAccent"
+                        android:thumbTint="@color/colorAccent" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_below="@+id/argio"
+                    android:id="@+id/edixt_label_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write your caption here"
+
+
+                    android:textColor="#ffffff"
+                    android:textColorHint="#cdcdcd" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
